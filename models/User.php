@@ -4,8 +4,8 @@ class User {
     private $db;
 
     public function __construct(){
-        //$this ->db =new  Database;
-        $this->db = Database ::getInstance();
+        //$this ->db =new  Database; instance du base de donnée 
+        $this->db = Database ::getInstance()->getDb();
     }
 
     public function insert($name, $age) {
